@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Share To Browser</string>
+    <string name="share_receiver_title">Browser</string>
+</resources>
