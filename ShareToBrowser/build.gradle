@@ -1,4 +1,5 @@
 apply plugin: 'android'
+apply from: 'signing.gradle'
 
 android {
     compileSdkVersion 19
@@ -14,6 +15,7 @@ android {
         release {
             runProguard false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.release
         }
     }
 }

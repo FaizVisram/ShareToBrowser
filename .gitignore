@@ -56,4 +56,4 @@ Icon
 .Trashes
 
 # Signing Config
-signing.properties
+signing.gradle
