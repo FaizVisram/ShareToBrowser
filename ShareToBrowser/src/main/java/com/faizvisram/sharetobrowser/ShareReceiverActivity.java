@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -40,8 +41,11 @@ public class ShareReceiverActivity extends Activity {
 
             if (m.matches()) {
                 sendUrl(m.group(1));
+                return;
             }
         }
+
+        Toast.makeText(this, getString(R.string.error_link_not_found), Toast.LENGTH_SHORT).show();
     }
 
     void sendUrl(String url) {

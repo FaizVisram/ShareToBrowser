@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Share To Browser</string>
     <string name="share_receiver_title">Browser</string>
+    <string name="error_link_not_found">No link found.</string>
 </resources>
